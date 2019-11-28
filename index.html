@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>김보영 - 포트폴리오</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="profile/css/profile.css"/>
+    <script type="text/javascript" src="profile/script/flash.js"></script>
+    <script type="text/javascript">
+      function menuOn(imgEl) {
+       imgEl.src = imgEl.src.replace("_off", "_on");
+      }
+   
+      function menuOut(imgEl) {
+        imgEl.src = imgEl.src.replace("_on", "_off");
+      }
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("ul#btn_portfolio li").hover(function() { //Hover over event on list item
+          $(this).find("span").show(); //Show the subnav
+        } , function() { //on hover out...
+  	      $(this).find("span").hide(); //Hide the subnav
+        });
+      });
+    </script>
+
+    <!--최상위 스크롤 시작-->
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>			
+    <script type="text/javascript">
+  		$(document).ready(function(){ 
+  			$(window).scroll(function(){
+  				if ($(this).scrollTop() > 100) {
+  					$('.scrollup').fadeIn();
+  				} else {
+  					$('.scrollup').fadeOut();
+  				}
+  			}); 
+  			
+  			$('.scrollup').click(function(){
+  				$("html, body").animate({ scrollTop: 0 }, 500); //스크롤 속도//
+  				return false;
+  			});
+   
+  		});
+  	</script>
+    <!--최상위 스크롤 끝-->
+
+    <script type="text/javascript">
+  		$(document).ready(function(){ 
+  			$(window).scroll(function(){
+  				if ($(this).scrollTop() > 100) {
+  					$('.scrollp').fadeIn();
+  				} else {
+  					$('.scrollp').fadeOut();
+  				}
+  			}); 
+  			
+  			$('.scrollp').click(function(){
+  				$("html, body").animate({ scrollTop: #portfolio_01 }, 500); //스크롤 속도//
+  				return false;
+  			});
+      });
+  	</script>
+    <!--최상위 스크롤 끝-->
+    <script src="profile/nice/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript"> //스크롤 디자인 변경
+      $(document).ready(function(){
+        $('html').niceScroll();        
+      });
+    </script>
+
+  </head>
+
+  <body>
+    <div id="wrap">
+	    <div id="header">
+        <div class="menu">
+        	<h1><img src="profile/images/name.jpg" /></h1>
+          <!-- 메뉴 시작-->
+        	<div class="navi">
+            <h3>
+              <ul>
+                <li class="nav none"><a href="#profile">my</a></li>
+              </ul>
+            </h3>
+            <!--<ul>
+              <li class="nav"><a href="#my_profile">Profile</a></li>
+              <li class="nav"><a href="#my_introduce">Introduce</a></li>
+            </ul>-->
+            <h3 class="ml40">
+              <ul>
+                <li class="nav none"><a href="#portfolio">portfolio</a></li>
+              </ul>
+            </h3>
+            <ul class="portfolio">
+              <li class="nav"><a href="#portfolio_01"><img src="profile/images/layout/menu_02_s1_off.jpg" onmouseover="menuOn(this);" onmouseout="menuOut(this);" /></a></li>
+              <li class="nav"><a href="#portfolio_02"><img src="profile/images/layout/menu_02_s2_off.jpg" onmouseover="menuOn(this);" onmouseout="menuOut(this);" /></a></li>
+              <li class="nav"><a href="#portfolio_03"><img src="profile/images/layout/menu_02_s3_off.jpg" onmouseover="menuOn(this);" onmouseout="menuOut(this);" /></a></li>
+              <li class="nav"><a href="#portfolio_04"><img src="profile/images/layout/menu_02_s4_off.jpg" onmouseover="menuOn(this);" onmouseout="menuOut(this);" /></a></li>
+              <li class="nav"><a href="#portfolio_etc"><img src="profile/images/layout/menu_02_s5_off.jpg" onmouseover="menuOn(this);" onmouseout="menuOut(this);" /></a></li>
+            </ul>            
+          </div>
+          <!-- 메뉴 끝-->
+
+          <!--<div class="topbtn">
+            <ul>
+              <li class="nav"><a href="#wrap"><img src="profile/images/layout/btn_top_t_off.jpg" onmouseover="menuOn(this);" onmouseout="menuOut(this);" /></a></li>
+            </ul>
+          </div>-->
+
+          <ul id="btn_portfolio"><!-- 휴대폰 수정-->
+            <li class="mobile"><a href="tel:01071696516"><img src="profile/images/mobile.jpg" /></a></li>
+            <!-- 휴대폰 수정-->
+            <li>
+              <img src="profile/images/layout/btn_portfolio.jpg" />
+              <span>
+                <!-- 포폴링크수정 1--><a href="https://lapuger.github.io/suwonlib/" target="_blank"><img src="profile/images/layout/btn_portfolio_01_off.jpg" class="pr1" onmouseover="menuOn(this);" onmouseout="menuOut(this);"/></a><!-- 포폴링크수정 2--><a href="https://lapuger.github.io/4paws/" target="_blank"><img src="profile/images/layout/btn_portfolio_02_off.jpg" class="pr1" onmouseover="menuOn(this);" onmouseout="menuOut(this);"/></a><!-- 포폴링크수정 2--><!-- 포폴링크수정 3--><a href="https://lapuger.github.io/visitjeju/" target="_blank"><img src="profile/images/layout/btn_portfolio_03_off.jpg" onmouseover="menuOn(this);" onmouseout="menuOut(this);"/></a><!-- 포폴링크수정 3--><!-- 포폴링크수정 3--><a href="https://lapuger.github.io/3ce/" target="_blank"><img src="profile/images/layout/btn_portfolio_04_off.jpg" onmouseover="menuOn(this);" onmouseout="menuOut(this);"/></a><!-- 포폴링크수정 3-->
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="profile">
+      	<div id="my_profile">
+          <!--<video width="450" height="450" id="video" autoplay loop muted>
+            <source src="profile/images/output.mp4" type="video/mp4">
+          </video>-->
+          <img src="profile/images/profile.jpg" alt="프로필" />
+        </div>
+        <!--<div id="my_introduce"><img src="profile/images/introduce.jpg" /></div>-->
+      </div>
+
+      <div id="portfolio">
+    	  <div id="portfolio_01"><!-- 포트폴리오 01 시작 -->
+ 			    <div class="portfolio_png"><img src="profile/images/portfolio_main01.png" /></div>
+	        <div class="portfolio_contents">
+           	<h2><img src="profile/images/portfolio_tit01.jpg" /></h2>
+            <ul>
+              <li><a href="https://lapuger.github.io/suwonlib/" target="_blank"><img src="profile/images/layout/btn_portfolio_website_off.jpg" onMouseOver="menuOn(this);" onMouseOut="menuOut(this);"/></a></li>
+              <li class="made ptext">3week</li>
+              <li class="concept ptext">수원시 중앙도서관은 수원시민들의 보다 편한 도서관의 다양한 시스템과 도서관 이용을 제공하기 위해 홈페이지를 운영하고 있다.<br />새롭게 디자인한 이 웹페이지는 각각 PC, 모바일 버전으로 이용 가능하며 시선을 끄는 큰 단락과 디자인으로 연령대 상관없이 손쉽게 정보를 얻을 수 있다.</li>
+              <li class="epilogue ptext">평소에 종종 이용하는 도서관 앱과 홈페이지에 불편함을 느껴, 또한 자주 이용하시는 아버지와 주변인들의 피드백을 얻어 개선하고 싶은 부분 위주로 디자인하였다. 연세있는 분들도 가독에 어렵지 않게 비교적 큰 아이콘, 이미지, 폰트를 사용하였다.<br />
+              모바일 앱의 경우, 전자책의 이용과 도서검색, 대출현황 관리와 도서 대출 등 가장 많이 이용하는 서비스에 집중해 디자인하였다.</li>
+            </ul>
+          </div>
+        </div><!-- 포트폴리오 01 끝 -->   
+     	
+        <div id="portfolio_02"><!-- 포트폴리오 02 시작 -->
+        	<div class="portfolio_png">
+            <img src="profile/images/portfolio_main02.png" />
+	          <div class="pline"></div>
+          </div>
+          <div class="portfolio_contents">
+           	<h2><img src="profile/images/portfolio_tit02.jpg" /></h2>
+            <ul>
+              <li><a href="https://lapuger.github.io/4paws/" target="_blank"><img src="profile/images/layout/btn_portfolio_website_off.jpg" onMouseOver="menuOn(this);" onMouseOut="menuOut(this);"/></a></li>
+              <li class="made ptext">2week</li>
+              <li class="concept ptext">네발바닥은 반려동물수의 증가와 동물의 권리에 대한 시민들의 의식 변화에 발맞춰 반려동물을 위한 종합 쇼핑몰을 개선했다.<br />
+              대형견부터 관상어까지 다양한 반려동물의 의식주 기타 모든 것을 갖추었다.</li>
+              <li class="epilogue ptext">현재 인터넷에서 가장 많은 주제의 웹페이지를 꼽으라면 쇼핑몰 페이지가 아닐까. 반려동물을 키우는 입장에서 있었으면 하는 페이지 컨셉을 가지고 제작하였다.<br />
+              다양한 반려동물 용품을 포함해 검색 기능 활용을 장려하기 위해 최대한 크고 잘보이는 곳에 위치했다.</li>
+            </ul>
+          </div>
+        </div><!-- 포트폴리오 02 끝 -->
+
+        <div id="portfolio_03"><!-- 포트폴리오 03 시작 -->
+          <div class="portfolio_png">
+            <img src="profile/images/portfolio_main03.jpg" />
+	          <div class="pline"></div>
+          </div>
+          <div class="portfolio_contents">
+           	<h2><img src="profile/images/portfolio_tit03.jpg" /></h2>
+            <ul>
+              <li><a href="https://lapuger.github.io/visitjeju/" target="_blank"><img src="profile/images/layout/btn_portfolio_website_off.jpg" onMouseOver="menuOn(this);" onMouseOut="menuOut(this);"/></a></li>
+              <li class="made ptext">2week</li>
+              <li class="concept ptext">제주관광공사 운영 제주도 공식 관광정보 포털로 제주공식 관광지도, 관광지, 음식점(맛집), 숙박, 쇼핑, 교통, 테마여행, 제주알아가기 등의 제주여행정보 제공한다.<br />
+              </li>
+              <li class="epilogue ptext">
+                타사이트의 래퍼런스를 분석해 밴치마킹해 새롭게 디자인한 홈페이지는, 기존 홈페이지와 달리 일러스트 위주로 재구성해 시각적 흥미 유발을 도모한다.<br />
+                페이지 특징에 어울리는 애니메이션을 삽입해 심플한 디자인이 단조롭지 않은 느낌을 주도록 하였다.
+              </li>
+            </ul>
+          </div>
+    	  </div><!-- 포트폴리오 03 끝 -->
+
+        <div id="portfolio_04"><!-- 포트폴리오 04 시작 -->
+          <div class="portfolio_png">
+            <img src="profile/images/portfolio_main04.png" />
+            <div class="pline"></div>
+          </div>
+          <div class="portfolio_contents">
+            <h2><img src="profile/images/portfolio_tit04.jpg" /></h2>
+            <ul>
+              <li><a href="https://lapuger.github.io/3ce/" target="_blank"><img src="profile/images/layout/btn_portfolio_website_off.jpg" onMouseOver="menuOn(this);" onMouseOut="menuOut(this);"/></a></li>
+              <li class="made ptext">2week</li>
+              <li class="concept ptext">패션 종합 브랜드 3CE의 코스메틱 카테고리에 속하는 페이지. 웹쇼핑을 하기 위한 외국인의 접속이 많아 외국어 지원은 물론 한눈에 파악하기 쉽고 구매욕구를 자극하도록 페이지 내에 많은 이미지를 배치하고 있다.</li>
+              <li class="epilogue ptext">기존 3CE의 코스메틱 홈페이지는 작은 폰트와 스크린 크기에 비해 작은 썸네일로 답답한 이미지를 주었다.<br />
+              재디자인한 페이지에서는 폰트 사이즈를 키우고 반응형에 따른 썸네일 크기를 적당하게 조정하였으며 스크롤의 위치에 상관없이 확인할 수 있는 네비게이션 바 등을 수정 작업했다.
+              </li>
+            </ul>
+          </div>
+        </div><!-- 포트폴리오 04 끝 -->
+        
+        <div id="portfolio_etc"><!-- 기타 포트폴리오 시작 -->
+          <div class="portfolio_etc">
+            <img src="profile/images/portfolio_etc.jpg" />
+            <div class="pline"></div>
+          </div>
+        </div><!-- 기타 포트폴리오 끝 -->
+      </div>
+
+      <div id="footer"><!-- 푸터 시작 -->
+      	<div class="footer_contents">
+        	<p class="copyright">COPYRIGHT 2019 <span class="name">KIM BO YOUNG</span>. ALL RIGHTS RESERVED.</p>
+        </div>
+      </div><!-- 푸터 끝 -->
+
+      <div><a href="#portfolio_01" class="scrollp"></a></div>
+      <div><a href="#portfolio_01" class="scrollup"></a></div>
+    </div>
+	
+    <script type="text/javascript" src="profile/script/jquery.easing.1.3.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $('li.nav a').bind('click',function(event){
+          var $anchor = $(this);
+          $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+          }, 600,'easeInOutExpo');
+          /* if you don't want to use the easing effects:
+              $('html, body').stop().animate({
+                 scrollTop: $($anchor.attr('href')).offset().top
+              }, 1000);*/
+          event.preventDefault();
+        });
+      });
+    </script>
+  </body>
+</html>
